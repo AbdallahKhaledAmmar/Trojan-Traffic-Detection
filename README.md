@@ -9,7 +9,7 @@ Machine-learning experiment that tries to classify network flows as **Benign** o
 1. Clean: strip column names, drop identifiers (`Flow ID`, IPs, `Timestamp`, row index), handle inf/NaN, drop constant columns.
 2. Explore: class balance, duration distribution, correlations.
 3. Compare Decision Tree, Random Forest, Gradient Boosting, Logistic Regression with stratified 5-fold CV, plus a majority-class baseline.
-4. Evaluate the best model on a 30% hold-out set (precision / recall / F1, confusion matrix).
+4. Evaluate the best model on a 30% hold-out set (precision/recall/F1, confusion matrix); visualise a decision tree and feature importances.
 
 ## Key findings
 - **Data leakage:** the row-index column alone predicts the label with ~100% accuracy, so it is excluded.
